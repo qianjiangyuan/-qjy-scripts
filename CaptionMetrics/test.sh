@@ -1,0 +1,1 @@
+python3 evaluate.py input_param.json eval_result.json

@@ -15,7 +15,7 @@ def bleu():
     # scorer += (hypo[0], ref1)   # hypo[0] = 'word1 word2 word3 ...'
     #                                 # ref = ['word1 word2 word3 ...', 'word1 word2 word3 ...']
     score, scores = scorer.compute_score(gts, res)
-
+    print(gts, res)
     print('belu = %s' % score)
 
 def cider():
