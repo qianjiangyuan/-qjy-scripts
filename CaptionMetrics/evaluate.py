@@ -143,7 +143,7 @@ if __name__=="__main__":
     # 自定义变量区
     ## 假设答案命名为a.json, 用户提交为b.json，命名内容为zip包自定义，应该前期约束
     standard_file = 'a.json'
-    submit_file = 'b.json'
+    submit_file = 'result.json'
 
 
     # read submit and answer file from first parameter
