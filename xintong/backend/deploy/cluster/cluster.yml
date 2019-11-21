@@ -1,0 +1,20 @@
+# rke cluster config
+nodes:
+    - address: 192.168.1.14
+      user: jinyi
+      role:
+        - controlplane
+        - etcd
+        - worker
+    - address: 192.168.1.15
+      user: jinyi
+      role:
+        - controlplane
+        - etcd
+        - worker
+    - address: 192.168.1.16
+      user: jinyi
+      role:
+        - controlplane
+        - etcd
+        - worker

@@ -1,0 +1,32 @@
+# for config details see
+# https://github.com/docker/distribution/blob/master/docs/configuration.md
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: docker-registry-config
+data:
+  conf: |
+    version: 0.1
+    log:
+      fields:
+        service: registry
+    storage:
+      cache:
+        blobdescriptor: inmemory
+      filesystem:
+        rootdirectory: /var/lib/registry
+    http:
+      addr: :5000
+      headers:
+        X-Content-Type-Options: [nosniff]
+    health:
+      storagedriver:
+        enabled: true
+        interval: 10s
+        threshold: 3
+    auth:
+      htpasswd:
+        realm: basic-realm
+        path: /etc/docker/registry/htpasswd
+  auth: |
+    admin:$2y$05$oGpureU5Ji7GKDT8YxNCQeuiWN5S1MiKwTW7mOE/mF9f.mVdvz6lq

@@ -1,0 +1,14 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: docker-registry
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+spec:
+  rules:
+    - host: registry.oneflow.info
+      http:
+        paths:
+          - backend:
+              serviceName: docker-registry
+              servicePort: 5000

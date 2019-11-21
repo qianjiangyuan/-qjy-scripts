@@ -1,0 +1,5 @@
+.idea
+commitlint.config.js
+backend/config/app.conf.toml
+xintong/frontend/node_modules
+.DS_Store

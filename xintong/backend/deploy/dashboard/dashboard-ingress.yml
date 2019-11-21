@@ -1,0 +1,22 @@
+# https://kubernetes.io/docs/concepts/services-networking/ingress/#simple-fanout
+# https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-multi-ssl?hl=zh-cn
+# https://github.com/helm/charts/blob/master/stable/kubernetes-dashboard/values.yaml#L104
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: kubernetes-dashboard
+  namespace: kube-system
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+    - secretName: admin-oneflow-info-ingress-tls
+  rules:
+    - host: admin.oneflow.info
+      http:
+        paths:
+          - path: /dashboard
+            backend:
+              serviceName: kubernetes-dashboard
+              servicePort: 8443

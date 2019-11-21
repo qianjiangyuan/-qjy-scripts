@@ -1,0 +1,36 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: docker-registry
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: docker-registry-app
+    spec:
+      containers:
+        - name: docker-registry-v2
+          ports:
+            - containerPort: 5000
+          image: registry:2
+          volumeMounts:
+            - name: registry-store
+              mountPath: /var/lib/registry
+            - name: registry-conf
+              mountPath: /etc/docker/registry
+      volumes:
+        - name: registry-store
+          persistentVolumeClaim:
+            claimName: registry-store-claim
+        - name: registry-conf
+          configMap:
+            name: docker-registry-config
+            items:
+              - key: conf
+                path: config.yml
+              - key: auth
+                path: htpasswd
+  selector:
+    matchLabels:
+      app: docker-registry-app

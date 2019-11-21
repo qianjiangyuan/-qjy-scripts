@@ -1,0 +1,27 @@
+settings:
+  legacy:
+    force: false
+    interval: 0s
+schema:
+- name: backend
+  path: .
+  commands:
+    run:
+      status: true
+      args:
+        - main.go
+  watcher:
+    extensions:
+    - go
+    paths:
+    - /
+    ignore:
+      paths:
+      - .git
+      - .idea
+      - .realize
+      - vendor
+      - docs
+      - go.mod
+      - go.sum
+      - README.md

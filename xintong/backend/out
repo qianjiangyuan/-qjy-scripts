@@ -1,0 +1,164 @@
+nohup: ignoring input
+mongodb connect ok ...
+kubernetes connect ok ...
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /upload/upload            --> github.com/xxmyjk/xintong/backend/pkg/app/controller/upload.HandleUploadMutiFile (6 handlers)
+[GIN-debug] POST   /upload/list              --> github.com/xxmyjk/xintong/backend/pkg/app/controller/upload.List (6 handlers)
+[GIN-debug] POST   /dataset/queryPageList    --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.QueryPageList (6 handlers)
+[GIN-debug] POST   /dataset/save             --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.Save (6 handlers)
+[GIN-debug] POST   /dataset/update           --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.Update (6 handlers)
+[GIN-debug] GET    /dataset/detail           --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.Detail (6 handlers)
+[GIN-debug] POST   /dataset/deletes          --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.Deletes (6 handlers)
+[GIN-debug] POST   /dataset/queryPageFiles   --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.QueryPageFiles (6 handlers)
+[GIN-debug] POST   /image/save               --> github.com/xxmyjk/xintong/backend/pkg/app/controller/image.Save (6 handlers)
+[GIN-debug] POST   /image/update             --> github.com/xxmyjk/xintong/backend/pkg/app/controller/image.Update (6 handlers)
+[GIN-debug] GET    /image/detail             --> github.com/xxmyjk/xintong/backend/pkg/app/controller/image.Detail (6 handlers)
+[GIN-debug] POST   /image/queryPageList      --> github.com/xxmyjk/xintong/backend/pkg/app/controller/image.QueryPageList (6 handlers)
+[GIN-debug] POST   /image/deletes            --> github.com/xxmyjk/xintong/backend/pkg/app/controller/image.Deletes (6 handlers)
+[GIN-debug] POST   /workspace/queryPageList  --> github.com/xxmyjk/xintong/backend/pkg/app/controller/workspace.QueryPageList (6 handlers)
+[GIN-debug] POST   /workspace/save           --> github.com/xxmyjk/xintong/backend/pkg/app/controller/workspace.Save (6 handlers)
+[GIN-debug] POST   /workspace/update         --> github.com/xxmyjk/xintong/backend/pkg/app/controller/workspace.Update (6 handlers)
+[GIN-debug] GET    /workspace/detail         --> github.com/xxmyjk/xintong/backend/pkg/app/controller/workspace.Detail (6 handlers)
+[GIN-debug] POST   /workspace/deletes        --> github.com/xxmyjk/xintong/backend/pkg/app/controller/workspace.Deletes (6 handlers)
+[GIN-debug] POST   /user/queryPageList       --> github.com/xxmyjk/xintong/backend/pkg/app/controller/admin/user.QueryPageList (6 handlers)
+[GIN-debug] POST   /user/save                --> github.com/xxmyjk/xintong/backend/pkg/app/controller/admin/user.Save (6 handlers)
+[GIN-debug] POST   /user/update              --> github.com/xxmyjk/xintong/backend/pkg/app/controller/admin/user.Update (6 handlers)
+[GIN-debug] GET    /user/detail              --> github.com/xxmyjk/xintong/backend/pkg/app/controller/admin/user.Detail (6 handlers)
+[GIN-debug] POST   /user/deletes             --> github.com/xxmyjk/xintong/backend/pkg/app/controller/admin/user.Deletes (6 handlers)
+[GIN-debug] POST   /user/commitPassWd        --> github.com/xxmyjk/xintong/backend/pkg/app/controller/admin/user.CommitPassWd (6 handlers)
+[GIN-debug] GET    /train/release            --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.Release (6 handlers)
+[GIN-debug] POST   /train/queryPageList      --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.QueryPageList (6 handlers)
+[GIN-debug] POST   /train/save               --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.Save (6 handlers)
+[GIN-debug] POST   /train/update             --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.Update (6 handlers)
+[GIN-debug] GET    /train/detail             --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.Detail (6 handlers)
+[GIN-debug] POST   /train/deletes            --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.Deletes (6 handlers)
+[GIN-debug] GET    /train/xterm/*w           --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.Xterm (6 handlers)
+[GIN-debug] POST   /train/queryPageFiles     --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.QueryPageFiles (6 handlers)
+[GIN-debug] POST   /train/queryModelFileUrl  --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.QueryModelFileUrl (6 handlers)
+[GIN-debug] GET    /train/stopTrainTask      --> github.com/xxmyjk/xintong/backend/pkg/app/controller/train.StopTrainTask (6 handlers)
+[GIN-debug] POST   /dlmodel/queryPageList    --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlmodel.QueryPageList (6 handlers)
+[GIN-debug] POST   /dlmodel/save             --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlmodel.Save (6 handlers)
+[GIN-debug] POST   /dlmodel/update           --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlmodel.Update (6 handlers)
+[GIN-debug] GET    /dlmodel/detail           --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlmodel.Detail (6 handlers)
+[GIN-debug] POST   /dlmodel/deletes          --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlmodel.Deletes (6 handlers)
+[GIN-debug] POST   /dlmodel/queryPageFiles   --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlmodel.QueryPageFiles (6 handlers)
+[GIN-debug] POST   /dlservice/queryPageList  --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlservice.QueryPageList (6 handlers)
+[GIN-debug] POST   /dlservice/save           --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlservice.Save (6 handlers)
+[GIN-debug] POST   /dlservice/update         --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlservice.Update (6 handlers)
+[GIN-debug] GET    /dlservice/detail         --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlservice.Detail (6 handlers)
+[GIN-debug] POST   /dlservice/deletes        --> github.com/xxmyjk/xintong/backend/pkg/app/controller/dlservice.Deletes (6 handlers)
+[GIN-debug] POST   /code-house/queryPageList --> github.com/xxmyjk/xintong/backend/pkg/app/controller/code_house.QueryPageList (6 handlers)
+[GIN-debug] POST   /code-house/save          --> github.com/xxmyjk/xintong/backend/pkg/app/controller/code_house.Save (6 handlers)
+[GIN-debug] POST   /code-house/update        --> github.com/xxmyjk/xintong/backend/pkg/app/controller/code_house.Update (6 handlers)
+[GIN-debug] GET    /code-house/detail        --> github.com/xxmyjk/xintong/backend/pkg/app/controller/code_house.Detail (6 handlers)
+[GIN-debug] POST   /code-house/deletes       --> github.com/xxmyjk/xintong/backend/pkg/app/controller/code_house.Deletes (6 handlers)
+[GIN-debug] POST   /group/queryPageList      --> github.com/xxmyjk/xintong/backend/pkg/app/controller/group.QueryPageList (6 handlers)
+[GIN-debug] POST   /group/save               --> github.com/xxmyjk/xintong/backend/pkg/app/controller/group.Save (6 handlers)
+[GIN-debug] POST   /group/update             --> github.com/xxmyjk/xintong/backend/pkg/app/controller/group.Update (6 handlers)
+[GIN-debug] GET    /group/detail             --> github.com/xxmyjk/xintong/backend/pkg/app/controller/group.Detail (6 handlers)
+[GIN-debug] POST   /group/deletes            --> github.com/xxmyjk/xintong/backend/pkg/app/controller/group.Deletes (6 handlers)
+[GIN-debug] POST   /auth/login               --> github.com/xxmyjk/xintong/backend/pkg/app/controller/auth.Login (6 handlers)
+[GIN-debug] POST   /auth/github-login        --> github.com/xxmyjk/xintong/backend/pkg/app/controller/auth.GitHubLogin (6 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8080
+[GIN] 2019/11/20 - 16:20:36 | 204 |      12.813µs |    10.252.0.178 | OPTIONS  /dataset/queryPageList
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.QueryPageList
+&{{{ObjectID("5d4a47004239a13a349cdfbc") 2019-08-07 03:35:28.989 +0000 UTC 2019-08-07 03:35:28.989 +0000 UTC false ObjectID("000000000000000000000000")} admin 管理员 14e1b600b1fd579f47433b88e8d85291 13911706175  ObjectID("5d4aa2c918c38f76d3be3a07") ObjectID("5d8424bf04895c85bc35b842") admin } { 1574244419  0 gin-blog 0 }}
+[GIN] 2019/11/20 - 16:20:36 | 200 |    7.505871ms |    10.252.0.178 | POST     /dataset/queryPageList
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.QueryPageList
+&{{{ObjectID("5d4a47004239a13a349cdfbc") 2019-08-07 03:35:28.989 +0000 UTC 2019-08-07 03:35:28.989 +0000 UTC false ObjectID("000000000000000000000000")} admin 管理员 14e1b600b1fd579f47433b88e8d85291 13911706175  ObjectID("5d4aa2c918c38f76d3be3a07") ObjectID("5d8424bf04895c85bc35b842") admin } { 1574244419  0 gin-blog 0 }}
+[GIN] 2019/11/20 - 16:20:57 | 200 |    3.309595ms |    10.252.0.178 | POST     /dataset/queryPageList
+[GIN] 2019/11/20 - 16:20:59 | 204 |      11.318µs |    10.252.0.178 | OPTIONS  /code-house/queryPageList
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/code_house.QueryPageList
+[GIN] 2019/11/20 - 16:20:59 | 200 |    2.346696ms |    10.252.0.178 | POST     /code-house/queryPageList
+[GIN] 2019/11/20 - 16:40:38 | 204 |       9.086µs |      10.0.104.4 | OPTIONS  /dataset/queryPageList
+[GIN] 2019/11/20 - 16:40:38 | 204 |       4.467µs |      10.0.104.4 | OPTIONS  /image/queryPageList
+[GIN] 2019/11/20 - 16:40:38 | 204 |      10.131µs |      10.0.104.4 | OPTIONS  /code-house/queryPageList
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.QueryPageList
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/image.QueryPageList
+[GIN] 2019/11/20 - 16:40:38 | 401 |     356.033µs |      10.0.104.4 | POST     /dataset/queryPageList
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/code_house.QueryPageList
+[GIN] 2019/11/20 - 16:40:38 | 401 |     284.883µs |      10.0.104.4 | POST     /image/queryPageList
+[GIN] 2019/11/20 - 16:40:38 | 401 |     345.519µs |      10.0.104.4 | POST     /code-house/queryPageList
+[GIN] 2019/11/20 - 16:41:27 | 204 |      12.138µs |      10.0.104.4 | OPTIONS  /image/save
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/image.Save
+[GIN] 2019/11/20 - 16:41:27 | 401 |     293.762µs |      10.0.104.4 | POST     /image/save
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/dataset.QueryPageList
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/image.QueryPageList
+[GIN] 2019/11/20 - 16:41:39 | 401 |     217.523µs |      10.0.104.4 | POST     /dataset/queryPageList
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/code_house.QueryPageList
+[GIN] 2019/11/20 - 16:41:39 | 401 |     375.067µs |      10.0.104.4 | POST     /image/queryPageList
+[GIN] 2019/11/20 - 16:41:39 | 401 |     285.726µs |      10.0.104.4 | POST     /code-house/queryPageList
+[GIN] 2019/11/20 - 16:41:41 | 204 |      14.413µs |      10.0.104.4 | OPTIONS  /train/queryPageList
+stub middleware echo ...
+	 github.com/gin-gonic/gin.LoggerWithConfig.func1
+	 github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	 github.com/gin-contrib/cors.New.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.Stub.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/middleware.JWT.func1
+	 github.com/xxmyjk/xintong/backend/pkg/app/controller/train.QueryPageList
+[GIN] 2019/11/20 - 16:41:41 | 401 |     262.072µs |      10.0.104.4 | POST     /train/queryPageList
